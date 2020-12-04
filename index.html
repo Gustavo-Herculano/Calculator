@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gustavo H. Lima">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon/png" href="calculate.png" />
+
+</head>
+<body>
+    
+    <div class="center">
+        <div id="calculadora">
+            <header>
+                <div id="datetime">
+                    <div class="time"></div>
+                    <div class="date"></div>
+                </div>
+        
+                <div id="display"></div>
+                
+            </header>
+            <section class="container">
+                <div class="row">
+                    <button type="button" class="btn btn-others col-sm" id="clearall">C</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-others col-sm" id="clearentry">CE</button>
+                     <button type="button" class="btn btn-others col-sm" id="porcento">%</button>
+                    <button type="button" class="btn btn-others col-sm" id="backspace">←</button>
+                    <button type="button" class="btn btn-others col-sm" id="divisao">÷</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-number col-sm" id="7">7</button>
+                    <button type="button" class="btn btn-number col-sm" id="8">8</button>
+                    <button type="button" class="btn btn-number col-sm" id="9">9</button>
+                    <button type="button" class="btn btn-others col-sm" id="multiplicacao">X</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-number col-sm" id="4">4</button>
+                    <button type="button" class="btn btn-number col-sm" id="5">5</button>
+                    <button type="button" class="btn btn-number col-sm" id="6">6</button>
+                    <button type="button" class="btn btn-others col-sm" id="subtracao">-</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-number col-sm" id="1">1</button>
+                    <button type="button" class="btn btn-number col-sm" id="2">2</button>
+                    <button type="button" class="btn btn-number col-sm" id="3">3</button>
+                    <button type="button" class="btn btn-others col-sm" id="somar">+</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-others col-sm" id="sound">🎵</button>
+                    <button type="button" class="btn btn-number col-sm" id="0">0</button>
+                    <button type="button" class="btn btn-others col-sm" id="virgula">,</button>
+                    <button type="button" class="btn btn-others col-sm" id="igual" style="background-color: #134369;">=</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+<script src="scripts/controller/CalcController.js"></script>
+<script src="scripts/calculator.js"></script>
+</body>
+</html>
+
